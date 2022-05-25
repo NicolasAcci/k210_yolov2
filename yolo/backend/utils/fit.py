@@ -207,7 +207,7 @@ def save_tflite(model,num,w_name,alpha,anchors,label,i):
     lable=open(i+"/lable.txt","w")
     lable.write(str(label).replace("[","").replace("]","").replace("'",""))
     lable.close()
-    os.startfile(os.getcwd()+"/"+i)
+    # os.startfile(os.getcwd()+"/"+i)
 
 def _create_callbacks(saved_weights_name):
     # Make a few callbacks

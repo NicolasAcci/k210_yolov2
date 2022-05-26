@@ -3,19 +3,19 @@
         "architecture":"MobileNet",
         "input_size":224,
         "anchors":[
-            0.7682,
-            2.0,
-            1.0379,
-            2.6193,
-            1.3514,
-            3.7583,
-            1.8845,
-            4.625,
-            2.3609,
-            6.1946
+            0.8122,
+            0.3244,
+            0.8911,
+            0.4117,
+            2.3032,
+            0.8008,
+            2.999,
+            0.9751,
+            4.1458,
+            1.5964
         ],
         "labels":[
-            "person"
+            "carlicense"
         ],
         "coord_scale":1.0,
         "class_scale":1.0,
@@ -41,14 +41,14 @@
     },
     "train":{
         "actual_epoch":100,
-        "img_url":"D:/person_voc/VOCdevkit/VOC2007/JPEGImages",
-        "xml_url":"D:/person_voc/VOCdevkit/VOC2007/Annotations",
-        "train_image_folder":"D:/person_voc/VOCdevkit/VOC2007/Train_data/Train_img",
-        "train_annot_folder":"D:/person_voc/VOCdevkit/VOC2007/Train_data/Train_xml",
+        "img_url":"/content/k210_yolov2/VOCdevkit/VOC2007/JPEGImages",
+        "xml_url":"/content/k210_yolov2/VOCdevkit/VOC2007/Annotations",
+        "train_image_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Train_img",
+        "train_annot_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Train_xml",
         "train_times":5,
-        "valid_image_folder":"D:/person_voc/VOCdevkit/VOC2007/Train_data/Valid_img",
-        "valid_annot_folder":"D:/person_voc/VOCdevkit/VOC2007/Train_data/Valid_xml",
-        "test_folder":"D:/person_voc/VOCdevkit/VOC2007/Train_data/Test_img",
+        "valid_image_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Valid_img",
+        "valid_annot_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Valid_xml",
+        "test_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Test_img",
         "valid_times":5,
         "batch_size":4,
         "learning_rate":0.0001,
@@ -58,16 +58,15 @@
         "is_only_detect":0
     },
     "mobnet":{
-        "num_classes":2,
+        "num_classes":1,
         "labels":[
-            "cat",
-            "dog"
+            "carlicense"
         ],
         "image_width":224,
         "image_height":224,
-        "image_url":"D:/person_voc/datasets/cat_dog",
-        "train_image_folder":"D:/person_voc/datasets/cat_dog/train_data/train",
-        "valid_image_folder":"D:/person_voc/datasets/cat_dog/train_data/valid",
+        "image_url":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data",
+        "train_image_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Train_img",
+        "valid_image_folder":"/content/k210_yolov2/VOCdevkit/VOC2007/Train_data/Valid_img",
         "input_size":224,
         "epochs_num":1,
         "batch_size":8
